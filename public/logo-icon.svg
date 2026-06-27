@@ -1,0 +1,37 @@
+<svg width="120" height="160" viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="leafGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#66BB6A"/>
+      <stop offset="100%" stop-color="#1A5E28"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-10%" width="130%" height="125%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#1A5E28" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <!-- Location pin / leaf shape -->
+  <g filter="url(#shadow)">
+    <path d="M 60,8
+             C 86,8 108,30 108,56
+             C 108,82 88,102 68,117
+             L 60,148
+             L 52,117
+             C 32,102 12,82 12,56
+             C 12,30 34,8 60,8 Z"
+          fill="url(#leafGrad)"/>
+  </g>
+
+  <!-- Leaf veins -->
+  <path d="M 60,110 C 58,88 56,70 60,42"
+        stroke="white" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <path d="M 59,80 C 48,73 38,70 30,71"
+        stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.25"/>
+  <path d="M 59,64 C 49,57 41,54 34,53"
+        stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.25"/>
+
+  <!-- Checkmark -->
+  <polyline points="42,57 54,69 80,41"
+            stroke="white" stroke-width="6.5"
+            stroke-linecap="round" stroke-linejoin="round"
+            fill="none"/>
+</svg>

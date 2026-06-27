@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand-50: #f0faf1;
+  --color-brand-100: #d8f3db;
+  --color-brand-200: #b3e6b8;
+  --color-brand-300: #81d088;
+  --color-brand-400: #4caf50;
+  --color-brand-500: #388e3c;
+  --color-brand-600: #2e7d32;
+  --color-brand-700: #1a5e28;
+  --color-brand-800: #134820;
+  --color-brand-900: #0c3317;
+
+  --color-neutral-50: #f8f9f8;
+  --color-neutral-100: #f0f2f0;
+  --color-neutral-200: #e0e4e0;
+  --color-neutral-600: #6b7c6b;
+  --color-neutral-800: #2d3a2d;
+  --color-neutral-900: #1a221a;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-neutral-800 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .container-main {
+    @apply mx-auto w-full max-w-[1200px] px-6 md:px-12;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+}
